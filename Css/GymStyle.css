@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+  }
+ body{
+     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0; 
+}
+header{
+    background-color: #444;
+    padding: 10px;
+}
+header nav  img{
+    display: inline-block;
+     margin: -30px  60px -30px -40px;
+    /* margin-top:-30px ;
+    margin-bottom:-30px ;
+    margin-left: -40px;
+    margin-right: 60px;   */
+    width: 70px;
+    height: 70px;
+    border-radius: 90%;
+}
+header nav ul{
+    padding-left: 150px;
+    margin-top: -34px;
+}
+header nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+}
+nav li a {
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+} 
+.main{
+   margin-top: 0 px;
+   width: 100%;
+   height: 100vh;
+   background-image: url("/Image/Oig2.jpeg"); 
+   position: relative;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    background-color: rgba(red, green, blue, 0.6);
+}
+.container{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.title10{
+    color:#fff;
+    font-size: 55px;
+}
+.p10{
+    color: #f0f0f0;
+    letter-spacing: 0.1cm;
+    margin: 15px 0px;
+}
+.btn{
+    width: 125px;
+    height: 1cm;
+    border-radius: 6px;
+    border: 0;
+    font-size: medium;
+    text-transform: capitalize;
+    margin-right:0.5cm;
+    }
+    .btn2{
+        background-color: firebrick;
+        color:oldlace;
+    }
+.btn:hover{
+    opacity: 0.5;
+}
+.our-trainer{
+    display: inline-block;
+    position: relative;
+    padding-left:10px ;
+    margin-top: 21px;
+}
+.main-head-team{
+text-align: center;
+}
+.team-item {
+    float: left;
+    background-color: rgb(156, 9, 9);
+    width: 30%;
+    padding: 14px  19px;
+    margin-right: 1cm;
+    text-align: center;
+    position: relative; 
+}
+.dd {
+    margin: 0px  5%;
+}
+.team-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-img  img {
+    width: 100%;
+}
+.team-overley {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5) ;
+    visibility: hidden;
+    opacity: 0 ;
+    transition: 1s ;
+}
+.team-item:hover  .team-overley{
+    visibility: visible;
+    opacity: 0.6;
+}
+.team-overley  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(22, 4, 140);
+    color: #fff;
+    font-size: 23px;
+    margin-right: auto ;
+}
+.team-overley  a  i {
+    line-height: 40px ;
+}
+ .team-item::after {
+    position: absolute;
+    content: "";
+
+    width: 100% ;
+    height: 0 ;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: rgb(14, 131, 14) ;
+    opacity: 0 ;
+    transition: 1s;
+} 
+.team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5 ;
+}
+.team-item::before {
+    position: absolute;
+    content: "";
+
+    width: 100% ;
+    height: 0 ;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: rgb(233, 222, 222) ;
+    opacity: 0;
+    transition: 1s;
+}
+.team-item:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2 ;
+} 
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: #333333;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 24px;
+    color: #666666;
+  }
+  .plans {
+    display: inline-block;
+    position: relative;
+    left: 270px;
+    margin-top: 40px;
+    margin-bottom: 71px;
+  }
+  .pricing-item:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: #0b0c0c;
+    transition: .5s;
+    opacity:.5;
+}
+.pricing-item:hover:after{
+    width: 30%;
+    height: 100%;
+}
+
+  .plan {
+    float: left;
+    margin: 5px;
+    margin-right: 40px;
+    width: 320px;
+    height: 380px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .plan-header {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #0099ff;
+  }
+
+  .plan-price {
+    padding: 10px;
+    text-align: center;
+    font-size: 36px;
+    color: #0099ff;
+  }
+
+  .plan-features {
+    padding: 10px;
+    list-style-type: none;
+  }
+
+  .plan-features li {
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+
+  .plan-button {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #0099ff;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  .plan-button:hover {
+    background-color:#00bfff; 
+  }
+.section2-card-Domis{
+    padding: 120px 0;
+}
+.section2tilte{
+    margin-bottom: 50px;
+    font-size: x-large;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+}
+/* .bg-arrow{
+    width: 10px;
+    height: 10px;
+} */
+.bg-arrow-1{
+    background-color: #00ff26;
+    height: 10px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 37.5%;
+}
+.bg-arrow-2{
+   background-color: #ff0000;
+   height: 10px;
+   width: 40px;
+   position: absolute;
+   top: 50%;
+   left: 49.7%;
+}
+.bg-arrow-3{
+   background-color: #4c00ff;
+   height: 10px;
+   width: 40px;
+   position: absolute;
+   top: 50%;
+   left: 60.7%;
+}
+
+
+.card-weight{
+    width: 80%;
+    margin: auto;
+    /* position: relative; */
+}
+.content-card-all{
+    text-align: center;
+    height: 350px;
+    overflow: hidden;
+    /* position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%); */
+}
+.container-section2card{
+    border:1px dotted #00bfff ;
+    width: 30%;
+    text-align: center;
+    float: left;
+    margin-left: 39px; 
+    /* border: 1px solid #888; */
+     padding: 30px 15px; 
+}
+.container-section2card i{
+    color: #0099ff;
+}
+.container-section2card a{
+    color:#00afb9 ;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.container-section2card:hover .about-title-card{
+    color: #00ff26;
+    transition: color 1s; 
+}
+.ltr{
+    position: relative;
+}
+.ltr:after{
+    position: absolute;
+    content: ""; 
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #333333; 
+}
+.ltr:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+     }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }   
